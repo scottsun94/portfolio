@@ -1,13 +1,185 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300" rel="stylesheet">
+		<link href="lib/jquery.bxslider.css" rel="stylesheet">
+
 
 	<title>hello world</title>
+
+	<style type="text/css">
+		body{
+			min-height:100%;
+			margin: 0px;
+			padding: 0px;
+			background-image: url("images/background1.jpg");
+			background-size:100%;
+			background-repeat: no-repeat;
+
+		}
+		.container{
+			background-color: rgba(0,0,0,0.7);
+			padding:50px 0; 
+			position:absolute; 
+			top:0;
+			bottom:0; 
+			left:0; 
+			right:0;
+			text-align: center;
+		}
+		.div1{
+			width: 100%;
+			position: relative;
+			text-align: center;
+		}
+		.img01{
+			margin-top: 12.5%;
+			max-width: 30%;
+			
+			margin-bottom: 0px;
+		}
+		.div2{
+			position: absolute;
+			left:36.5vw;
+			top: 12.5vw;
+			width: 11vw;
+			height: 11vw;
+			border-radius: 5.5vw;
+			background-color: rgba(255,255,255,0);
+			display: flex;
+			align-items:center;
+			jusitfy-content:center;
+		}
+		.div3{
+			position: absolute;
+			left:52.3vw;
+			top: 12.5vw;
+			width: 11vw;
+			height: 11vw;
+			border-radius: 5.5vw;
+			background-color: rgba(255,255,255,0);
+			display: flex;
+			align-items:center;
+			jusitfy-content:center;
+		}
+		.p0_1{
+			margin: 0 auto;
+			color: rgba(255,255,255,1);
+			font-family: "Roboto",arial,sans-serif;
+			font-size: 0.8vw;
+			display: none;
+			text-decoration: none;
+			letter-spacing: 5px;
+			
+		}
+		.p0_2{
+			margin: 0 auto;
+			color: rgba(255,255,255,1);
+			font-family: "Roboto",arial,sans-serif;
+			font-size: 0.8vw;
+			display: none;
+			text-decoration: none;
+			letter-spacing: 5px;
+			
+		}
+		.div2:hover{
+			background-color: rgba(255,255,255,0.2);
+		}
+		.div3:hover{
+			background-color: rgba(255,255,255,0.2);
+		}
+		.p1{
+			color: white;
+			font-family: arial,sans-serif;
+			font-size: 3vw;
+			/*margin-top: 70px;*/
+			
+		}
+		.p2{
+			display: inline-block;
+			color: white;
+			font-family: "Roboto",arial,sans-serif;
+			border: 1px solid white;
+			border-radius: 3px;
+			padding: 12px;
+			/*padding-bottom: 7px;*/
+			width: 10%;
+			margin: 0 auto;
+			font-size: 15px;
+			font-weight: 200;
+			letter-spacing: 5px;
+		}
+		.p3{
+			display: inline-block;
+			color: white;
+			font-family: "Roboto",arial,sans-serif;
+			border: 1px solid white;
+			border-radius: 3px;
+			padding: 12px;
+			/*padding-bottom: 7px;*/
+			width: 6%;
+			margin: 0 auto;
+			margin-left: 10px;
+			font-size: 15px;
+			font-weight: 200;
+			letter-spacing: 5px;
+		}
+
+
+
+	</style>
 
 	</head>
 
 	<body>
-		Hi, I'm scott!！
+		<div class = "container">
+			<!-- <img src="images/background.jpg" class = "img01"> -->
+			<div class="div1">
+				<img src="images/logo.svg" class = "img01">
+				<div class="div2"><p class="p0_1"><a href="portfolio.html" style="text-decoration:none; color: rgba(255,255,255,1);">PORTFOLIO</a></p></div>
+				<div class="div3"><p class="p0_2"><a href="resume.html" style="text-decoration:none; color: rgba(255,255,255,1);">RESUME</a></p></div>
+			</div>
+			
+			<!-- <p class = "p1">Think Different.</p> -->
+			<!-- <p class = "p2">PORTFOLIO</p> -->
+			<!-- <p class = "p3">RESUME</p> -->
+			<ul class="bxslider"  style="display:none">	
+					<li><p class="p1">Think different.</p class="p1"></li>
+					<li><p class="p1">Stay hungry, stay foolish.</p class="p1"></li>
+					<li><p class="p1">Learn to fail and fail to learn.</p class="p1"></li>
+			</ul>
+			
+		</div>
+		<script type="text/javascript" src='js/jquery-3.1.0.js'></script>
+		<script src="lib/jquery.bxslider.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+  				$('.bxslider').show().bxSlider({
+  					mode: 'vertical',
+ 			 		captions: true,
+  					speed: 4000,
+  					randomStart: false,
+  					auto: true,
+  					pager: false,
+  					controls: false,
+  					pause: 1500
+  				});
+			});
+
+
+
+			$(".div2").hover(function(){
+				$(".p0_1").toggle();
+			});
+
+			$(".div3").hover(function(){
+				$(".p0_2").toggle();
+			});
+			
+
+		</script>
+
+
 	</body>
 
 </html>
