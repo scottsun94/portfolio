@@ -2,6 +2,7 @@
 <html>
 
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300,400" rel="stylesheet">
 		<meta charset="UTF-8">
 
@@ -55,6 +56,79 @@
 			.content img{
 				width: 100%;
 			}
+
+			.footer{
+				margin-top: 2vw;
+				position: relative;
+			}
+			.div_line{
+				margin-left: 13vw;
+				width: 75vw;
+				border: 0;
+				border-bottom: 1px;
+				border-color: rgb(220,220,220);
+				border-style: solid;
+				height: 1px;
+			}
+			.intro{
+				margin-left: 13vw;
+				width: 75vw;
+			}
+			.footer_p1{
+				display: inline-block;
+				font-family: "Roboto",arial,sans-serif;
+				font-size: 2vw;
+				color: black;
+				margin-bottom: 0.3vw;
+			}
+			.footer_p2{
+				display: inline-block;
+				font-family: "Roboto",arial,sans-serif;
+				font-size: 0.8vw;
+				color: rgb(120,120,120);
+				margin-left: 0.5vw;
+
+				/*margin-bottom: 5vw;*/
+				width: 55%;
+			}
+			.footer_p3{
+				font-family: "Roboto",arial,sans-serif;
+				font-size: 0.8vw;
+				color: rgb(200,200,200);
+				text-align: center;
+				margin-bottom: 0.6vw;
+				margin-top: 0.7vw;
+			}
+			.contact{
+				display: inline-block;
+				margin-left: 23vw;
+			}
+			.contact .p2{
+				height: 0.9vw;
+				margin-right: 0.5vw;
+			}
+			.contact .p3{
+				height: 1vw;
+			}
+
+			@media screen and (max-width: 640px) {
+				.header{
+				height: 15vw;
+				}
+				.footer_p2{
+					width: 87%;
+				}
+				.contact{
+				margin-left: 35vw;
+				}
+				.contact .p2{
+				height: 1.8vw;
+				margin-right: 0.5vw;
+				}
+				.contact .p3{
+				height: 2vw;
+				}
+			}
 		</style>
 	</head>
 	<body>
@@ -71,6 +145,21 @@
 
 			<div class = "content">
 				<img src="images/resume.jpg">
+			</div>
+
+
+			<div class = "footer">
+				<div class = "div_line"></div>
+				<div class = "intro">
+					<p class = "footer_p1">Hello.</p>
+					<p class = "footer_p2">My name is Huaiwei Sun. I'm a student learning design in Shanghai Jiao Tong University. You can see a sampling of my work here, please feel free to contact me if you have any question.</p>
+					<div class = "contact">
+						<a href="mailto: scottsun94@gmail.com" target = "_blank"><img src="images/mail.png" class = "p2"></a>
+						<a href="https://cn.linkedin.com/in/scottsun94"><img src="images/linkedin.png" class = "p3"></a>
+					</div>
+					<p class = "footer_p3">© 2016 Huaiwei Sun. All Rights Reserved.</p>
+				</div>
+
 			</div>
 		</div>
 	</body>
