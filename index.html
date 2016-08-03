@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300" rel="stylesheet">
 		<link href="lib/jquery.bxslider.css" rel="stylesheet">
 
@@ -124,6 +125,52 @@
 			font-weight: 200;
 			letter-spacing: 5px;
 		}
+
+/*		@media screen and (max-width: 1024px) {
+		.img_1{display: inline-block;}
+		.img_0{display: inline-block;}
+		.img_2{display: none;}
+		.img_3{display: none;}
+		.img_4{display: none;}
+		.img_5{display: none;}
+		div{height: 150px;}
+		}*/
+
+
+
+		@media screen and (max-width: 640px) {
+		body{background-image: url("images/background2.jpg");}
+		.img_1{display: none;}
+		.img01{
+			margin-top: 30vw;
+			max-width: 60vw;
+			margin-bottom: 0px;
+		}
+		.div2{
+			position: absolute;
+			left:23vw;
+			top: 30vw;
+			width: 22vw;
+			height: 22vw;
+			border-radius: 11vw;
+			background-color: rgba(255,255,255,0);
+			display: flex;
+			align-items:center;
+			jusitfy-content:center;
+		}
+		.div3{
+			position: absolute;
+			left:54.5vw;
+			top: 30vw;
+			width: 22vw;
+			height: 22vw;
+			border-radius: 11vw;
+			background-color: rgba(255,255,255,0);
+			display: flex;
+			align-items:center;
+			jusitfy-content:center;
+		}
+}
 
 
 
