@@ -5,374 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300,400" rel="stylesheet">
 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+		<link rel="shortcut icon" href="images/favicon.ico" />
 
-		<title>portfolio</title>
-		<style type="text/css">
-			body{
-				margin: 0;
-				padding: 0;
-			}
-			.container{
-				width: 100%;
-			}
-			.header{
-				width: 100%;
-				height: 12vw;
-				box-shadow: 0px 3px 7px 1px rgb(180,180,180);
-				text-align: center;
-			}
-			.p1{
-				width: 13vw;
-				margin: 0 auto;
-				margin-top: 2vw;
-			}
-			.div1{
-				margin-top:1.3vw;
-			}
-			.header a{
-				text-decoration: none;
-				color: black;
-				margin-left: 0.8vw;
-				margin-right: 2vw;
-				font-family: "Roboto",arial,sans-serif;
-				letter-spacing: 3px;
-				font-size: 0.95vw;
-			}
-			.a1{
-				padding-bottom: 7px;
-				border-bottom: 3px solid black;
-				border-radius: 1.5px;	
-			}
-			.a2{
-				font-weight: 300;
-			}
-
-			.wrapper{
-				margin: 0;
-				padding: 0;
-				margin-top: 3vw;
-				text-align: center;
-			}
-
-			.project{
-				display: inline-block;
-				width: 23vw;
-				height: 25vw;
-				/*background-color: black;*/
-				margin: 0;
-				padding: 0;
-				margin-left: 2vw;
-				margin-bottom: 2vw;
-				/*border-radius: 1px;*/
-/*
-				animation-name: transitionUp;
-    			animation-duration: 2s;
-    			animation-delay: 2s;
-    			animation-iteration-count: 1;*/
-
-			}
-
-			
-
-		/*	@keyframes transitionUp {
-				0% {
-					margin-top: 4vw;
-		  		}
-
-		  		25% {
-					margin-top: 3.75vw;
-		  		}
-
-		  		50% {
-					margin-top: 3vw;
-		  		}
-
-		  		70% {
-					margin-top: 2vw;
-		  		}
-
-
-		   		100% {
-					margin-top: 0vw;
-		    	}
-			}*/
-
-			.project a{
-				text-decoration: none;
-			}
-			.project_image{
-				width: 100%;
-				height: 23vw;
-				margin: 0;
-				padding: 0;
-				overflow: hidden;
-				position: relative;
-
-			}
-			.project img:hover{
-				opacity: 0.8;
-				transition:all 0.3s;
-				-webkit-transform:scale(1.1,1.1);
-    			-moz-transform:scale(1.1,1.1);
-   				-transform:scale(1.1,1.1);
-
-			}
-			.project_image img{
-				width: 100%;
-				/*height: 100%;*/
-				margin: 0;
-				padding: 0;
-				border-radius: 2px;
-			}
-			.p2_hidden{
-				/*display: none;*/
-				position: absolute;
-				top: 0vw;
-				left: 0vw;
-				margin: 0;
-				padding-top: 10vw;
-				padding-left: 0vw;
-				width: 100%;
-				height: 100%;
-				color: rgba(50,50,50,0);
-				letter-spacing: 2px;
-				font-family: "Roboto",arial,sans-serif;
-				font-weight: 300;
-				font-size: 1.5vw;
-				background-color: rgba(50,50,50,0);
-			}
-			.p2_hidden:hover{
-				display: block;
-				background-color: rgba(50,50,50,0.6);
-				color: white;
-
-			}
-			.p3_hidden{
-				/*display: none;*/
-				position: absolute;
-				top: 0vw;
-				left: 0vw;
-				margin: 0;
-				padding-top: 10vw;
-				padding-left: 0vw;
-				width: 100%;
-				height: 100%;
-				color: rgba(50,50,50,0);
-				letter-spacing: 2px;
-				font-family: "Roboto",arial,sans-serif;
-				font-weight: 300;
-				font-size: 1.5vw;
-				background-color: rgba(50,50,50,0);
-			}
-
-			.p3_hidden:hover{
-				display: block;
-				background-color: rgba(50,50,50,0.6);
-				color: white;
-
-			}
-			.p4_hidden{
-				/*display: none;*/
-				position: absolute;
-				top: 0vw;
-				left: 0vw;
-				margin: 0;
-				padding-top: 10vw;
-				padding-left: 0vw;
-				width: 100%;
-				height: 100%;
-				color: rgba(50,50,50,0);
-				letter-spacing: 2px;
-				font-family: "Roboto",arial,sans-serif;
-				font-weight: 300;
-				font-size: 1.5vw;
-				background-color: rgba(50,50,50,0);
-			}
-			.p4_hidden:hover{
-				display: block;
-				background-color: rgba(50,50,50,0.6);
-				color: white;
-
-			}
-			.p5_hidden{
-				/*display: none;*/
-				position: absolute;
-				top: 0vw;
-				left: 0vw;
-				margin: 0;
-				padding-top: 10vw;
-				padding-left: 0vw;
-				width: 100%;
-				height: 100%;
-				color: rgba(50,50,50,0);
-				letter-spacing: 2px;
-				font-family: "Roboto",arial,sans-serif;
-				font-weight: 300;
-				font-size: 1.5vw;
-				background-color: rgba(50,50,50,0);
-			}
-			.p5_hidden:hover{
-				display: block;
-				background-color: rgba(50,50,50,0.6);
-				color: white;
-
-			}
-			.p6_hidden{
-				/*display: none;*/
-				position: absolute;
-				top: 0vw;
-				left: 0vw;
-				margin: 0;
-				padding-top: 10vw;
-				padding-left: 0vw;
-				width: 100%;
-				height: 100%;
-				color: rgba(50,50,50,0);
-				letter-spacing: 2px;
-				font-family: "Roboto",arial,sans-serif;
-				font-weight: 300;
-				font-size: 1.5vw;
-				background-color: rgba(50,50,50,0);
-			}
-
-			.p6_hidden:hover{
-				display: block;
-				background-color: rgba(50,50,50,0.6);
-				color: white;
-
-			}
-			.project_caption{
-				color: rgb(120,120,120);
-				font-family: "Roboto",arial,sans-serif;
-				font-weight: 300;
-				letter-spacing: 1px;
-				font-size: 1vw;
-				padding-top: 15px;
-			}
-
-			.footer{
-				margin-top: 2vw;
-				position: relative;
-			}
-			.div_line{
-				margin-left: 13vw;
-				width: 75vw;
-				border: 0;
-				border-bottom: 1px;
-				border-color: rgb(220,220,220);
-				border-style: solid;
-				height: 1px;
-			}
-			.intro{
-				margin-left: 13vw;
-				width: 75vw;
-			}
-			.footer_p1{
-				display: inline-block;
-				font-family: "Roboto",arial,sans-serif;
-				font-size: 2vw;
-				color: black;
-				margin-bottom: 0.3vw;
-			}
-			.footer_p2{
-				display: inline-block;
-				font-family: "Roboto",arial,sans-serif;
-				font-size: 0.8vw;
-				color: rgb(120,120,120);
-				margin-left: 0.5vw;
-
-				/*margin-bottom: 5vw;*/
-				width: 55%;
-			}
-			.footer_p3{
-				font-family: "Roboto",arial,sans-serif;
-				font-size: 0.8vw;
-				color: rgb(200,200,200);
-				text-align: center;
-				margin-bottom: 0.6vw;
-				margin-top: 0.7vw;
-			}
-			.contact{
-				display: inline-block;
-				margin-left: 23vw;
-			}
-			.contact .p2{
-				height: 0.9vw;
-				margin-right: 0.5vw;
-			}
-			.contact .p3{
-				height: 1vw;
-			}
-
-
-			@media screen and (max-width: 640px) {
-				.header{
-				height: 25vw;
-				}
-				.p1{
-				width: 25vw;
-				margin: 0 auto;
-				margin-top: 5vw;
-				}
-				.div1{
-				margin-top:0.1vw;
-				height: 2.5vw;
-				}
-				.header a{
-					text-decoration: none;
-					color: black;
-					margin-left: 0.8vw;
-					margin-right: 2vw;
-					font-family: "Roboto",arial,sans-serif;
-					letter-spacing: 1px;
-					font-size: 2vw;
-				}
-				.a1{
-					padding-bottom: 4px;
-					border-bottom: 2px solid black;
-					/*border-radius: 1.5px;	*/
-				}
-
-				.project{
-				display: inline-block;
-				width: 90vw;
-				height: 92vw;
-				/*background-color: black;*/
-				margin: 0;
-				padding: 0;
-				margin-left: 2vw;
-				margin-bottom: 8vw;
-				}
-				.project_image{
-				height: 90vw;
-				}
-				.project_caption{
-				color: rgb(120,120,120);
-				font-family: "Roboto",arial,sans-serif;
-				letter-spacing: 1px;
-				font-size: 2vw;
-				padding-top: 7px;
-				}
-				.footer_p2{
-					width: 87%;
-				}
-				.contact{
-				margin-left: 35vw;
-				}
-				.contact .p2{
-				height: 1.8vw;
-				margin-right: 0.5vw;
-				}
-				.contact .p3{
-				height: 2vw;
-				}
-				
-			}
-
-
-
-
-		</style>
+		<title>Scott's Portfolio</title>
 
 	</head>
 	<body>
@@ -383,9 +19,9 @@
 					<a href="portfolio.html" class = "a1">PORTFOLIO</a>
 					<a href="resume.html" class = "a2">RESUME</a>
 				</div>
-
 			</div>
 
+<!-- projects -->
 			<div class = "work">
 				<div class = "wrapper">
 					<div class = "project">
@@ -393,7 +29,6 @@
 							<div class = "project_image"><img src="images/project_1.jpg"></div>
 							<div class = "project_caption">HAPPY COOKING</div>
 						</a>
-						
 					</div>
 
 					<div class = "project">
@@ -401,7 +36,6 @@
 							<div class = "project_image" ><img src="images/project_2.png" style="height:100%;"></div>
 							<div class = "project_caption">NINA</div>
 						</a>
-
 					</div>
 
 					<div class = "project">
@@ -409,7 +43,6 @@
 							<div class = "project_image"><img src="images/project_3.png" style="height:100%;"></div>
 							<div class = "project_caption">Insight of Xichao</div>
 						</a>
-
 					</div>
 
 					<div class = "project">
@@ -420,7 +53,6 @@
 							</div>
 							<div class = "project_caption">SERVICE DESIGN</div>
 						</a>
-
 					</div>
 
 					<div class = "project">
@@ -431,7 +63,6 @@
 							</div>
 							<div class = "project_caption">INTERACTION DESIGN</div>
 						</a>
-
 					</div>
 
 					<div class = "project">
@@ -442,74 +73,33 @@
 							</div>
 							<div class = "project_caption">CAR DESIGN</div>
 						</a>
-
 					</div>
 
 
 				</div>
-
 			</div>
+
+
 
 			<div class = "footer">
 				<div class = "div_line"></div>
 				<div class = "intro">
 					<p class = "footer_p1">Hello.</p>
 					<p class = "footer_p2">My name is Huaiwei Sun. I'm a student learning design in Shanghai Jiao Tong University. You can see a sampling of my work here, please feel free to contact me if you have any question.</p>
+
 					<div class = "contact">
 						<a href="mailto: scottsun94@gmail.com" target = "_blank"><img src="images/mail.png" class = "p2"></a>
 						<a href="https://cn.linkedin.com/in/scottsun94"><img src="images/linkedin.png" class = "p3"></a>
 					</div>
+
 					<p class = "footer_p3">© 2016 Huaiwei Sun. All Rights Reserved.</p>
 				</div>
-				
+
 
 			</div>
 		</div>
 
 		<script type="text/javascript" src='js/jquery-3.1.0.js'></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-
-				var p2 = "off";
-
-  				// $('.t_p2').hover(function(){
-  				// 	// console.log("111");
-  				// 	$('.p2_hidden').toggle();
-  				// 	if (p2 =="off") {
-  				// 		$('.p2_hidden').show();
-  				// 		p2 = "on"
-
-  				// 	}
-  				// 	else{
-  				// 		$('.p2_hidden').hide();
-  				// 		p2 = "off"
-
-  				// 	};
-
-  				// });
-  				// $('.t_p3').hover(function(){
-  				// 	// console.log("111");
-  				// 	$('.p3_hidden').toggle();
-
-  				// });
-  				// $('.t_p4').hover(function(){
-  				// 	// console.log("111");
-  				// 	$('.p4_hidden').toggle();
-
-  				// });
-  				// $('.t_p5').hover(function(){
-  				// 	// console.log("111");
-  				// 	$('.p5_hidden').toggle();
-
-  				// });
-  				// $('.t_p6').hover(function(){
-  				// 	// console.log("111");
-  				// 	$('.p6_hidden').toggle();
-
-  				// });
-  			});
-
-		</script>
 	</body>
 
 </html>
