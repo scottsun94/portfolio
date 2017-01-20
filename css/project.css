@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre');
+
 body{
 	margin: 0;
 	padding: 0;
@@ -49,8 +51,24 @@ body{
 .img-h{
 	height:100%;
 }
+.img-h-50{
+	height:50%;
+}
+
 .img-w{
-	height:100%;
+	width:100%;
+}
+.img-w-50{
+	width:50%;
+}
+.img-w-40{
+	width:40%;
+}
+.img-w-45{
+	width:45%;
+}
+.img-w-80{
+	width:80%;
 }
 .divide-4{
 	margin-top: 4.5rem;
@@ -67,6 +85,11 @@ body{
 .title-1{
 	color:#565656;
 	font-size: 1.7rem;
+	font-family: 'Frank Ruhl Libre',"Roboto",arial,sans-serif;
+}
+.title-2{
+	color:#f39800;
+	font-size: 1.5rem;
 	font-family: "Roboto",arial,sans-serif;
 }
 .description-1{
@@ -78,6 +101,12 @@ body{
 	color:#9e9e9e;
 	font-size: 1.3rem;
 	padding-right: 5px;
+}
+.topline-1{
+	border-top: 5px solid #f39800;
+}
+.underline-1{
+	border-bottom: 2px dotted #f39800;
 }
 
 .footer{
@@ -179,6 +208,9 @@ body{
 /*project2*/
 .space-1{
 	margin-top: 4.7rem;
+}
+.space-2{
+	margin-top: 2.3rem;
 }
 .proj2-p1{
 	padding-left: 12rem;
