@@ -70,6 +70,12 @@ body{
 .img-w-80{
 	width:80%;
 }
+.img-w-85{
+	width:85%;
+}
+.img-w-90{
+	width:90%;
+}
 .divide-4{
 	margin-top: 4.5rem;
 }
@@ -107,6 +113,9 @@ body{
 }
 .underline-1{
 	border-bottom: 2px dotted #f39800;
+}
+.underline-2{
+	border-bottom: 2px dotted #55ceb0;
 }
 
 .footer{
@@ -208,7 +217,7 @@ body{
 /*project1*/
 .proj1-p1{
 	color: #f39800;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 /*project2*/
@@ -236,4 +245,16 @@ body{
 	height:6.5rem;
 	background-color: #f39800;
 	color:white;
+}
+
+/*project3*/
+.proj3-p1{
+	color:#55ceb0;
+	font-weight: 500;
+}
+
+/*project5*/
+.proj5-p1{
+	color:#03a3ff;
+	font-weight: 500;
 }
