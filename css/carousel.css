@@ -1,0 +1,152 @@
+html {
+
+}
+.carousel{
+  margin-left: 6vw;
+  margin-right: 6vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+
+.carousel-control-prev{
+  opacity: 1;
+  justify-content:flex-start;
+  padding-left: 1rem;
+  background: linear-gradient(to right,rgba(150,150,150,.2) 0,rgba(30,30,30,.001) 100%);
+}
+
+.carousel-control-next{
+  opacity: 1;
+  justify-content:flex-end;
+  padding-right: 1rem;
+  background: linear-gradient(to left,rgba(150,150,150,.2) 0,rgba(30,30,30,.001) 100%);
+}
+
+.carousel-control-prev-icon {
+    background-image : url(../img/prev_arrow.svg)
+}
+.carousel-control-next-icon {
+    background-image : url(../img/next_arrow.svg)
+}
+
+.carousel-item > img {
+  /* fixes bootstrap 4 bug: bit.ly/bootstrap4-carousel */
+  width: 100%;
+  height: 100%;
+}
+
+.laptop {
+/*   width: 36%; */
+}
+
+.product-caption-title,
+.product-caption-button {
+  text-transform: uppercase;
+}
+
+.product-caption-button {
+  color: white;
+  border: 1px solid white;
+  padding: 5px 15px;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.carousel-indicators{
+  bottom: -20px;
+}
+.carousel-indicators .active{
+  background-color: #FF9C21;
+}
+.carousel-indicators li{
+  background-color: rgb(230,230,230);
+}
+
+
+
+/**
+* Media Queries, including bootstrap4 breakpoints (<576px, >=576px, >=768px, >=992px, >=1200px)
+**/
+
+@media screen and (min-width: 568) and (max-width: 1140px) and (orientation: portrait)  {
+  .active_profile{
+    display: none;
+  }
+  
+}
+
+
+@media screen and (min-width: 320px) {
+  body::before {
+
+    font-family: Arial, sans-serif;
+    color: green;
+    position: fixed;
+    top: -50;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 1rem;
+    z-index: 9999;
+  }
+  .active_profile{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  body::before {
+
+  }
+  .active_profile{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  body::before {
+
+  }
+  .active_profile{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  body::before {
+
+  }
+  .active_profile{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body::before {
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body::before {
+
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  body::before {
+
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  body::before {
+
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  body::before {
+
+  }
+}
