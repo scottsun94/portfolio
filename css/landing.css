@@ -13,10 +13,19 @@ body {
 .nav{
       display:block;
     }
-    .nav .active a{
-      color: #ff5722 !important;
-      font-weight: 400 !important;
-    }
+.nav .active a{
+  color: #ff5722 !important;
+  font-weight: 400 !important;
+}
+
+.label_top_20{
+  margin-top: 20px;
+}
+
+.label_top_40{
+  margin-top: 40px;
+}
+
 
 #scrollup {
     width: 30px;
