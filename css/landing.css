@@ -526,8 +526,17 @@ p.project-desc a{
 }*/
 
 #fh5co-main {
-  width: 81%;
+  width: 75%;
   float: right;
+  margin-right: 3%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#fh5co-main_detail {
+  width: 81%;
+  margin: 0 auto;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
