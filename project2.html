@@ -31,11 +31,11 @@
     <div id="fh5co-page">
       <!-- Side Navigation -->
       <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-      <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+      <aside id="fh5co-aside" role="complementary" class="border js-fullheight sidebar">
         
         <p class = "product_name">Bestbuy Demo</p>
         <nav id="fh5co-main-menu" role="navigation">
-          <ul>
+          <ul class="nav">
             <li><a href="#Overview">Overview</a></li>
               <li><a href="#Objective" class="sub">Objective</a></li>
               <li><a href="#Process" class="sub">Process</a></li>
@@ -605,6 +605,13 @@ Recommendation System, Price Matching System, Efficient Shopping Assistance Syst
                 }
             });
         });
+
+        $('body').scrollspy({ target: '.sidebar' });
+        $('ul.nav li a').bind('click', function(e) {
+          e.preventDefault();
+          $('html,body').animate({scrollTop: $(this.hash).offset().top});
+        });
+
     });
     </script>
     <!-- Plugin JavaScript
