@@ -4,3 +4,14 @@
 #fh5co-aside{
 	background-color: #F2FFFF;
 }
+body.offcanvas #fh5co-aside {
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  width: 270px;
+  background: #F2FFFF;
+  z-index: 999;
+  position: fixed;
+}

@@ -1,3 +1,14 @@
 .product_name{
 	color: #085eb9
 }
+body.offcanvas #fh5co-aside {
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  width: 270px;
+  background: #F0F8FC;
+  z-index: 999;
+  position: fixed;
+}

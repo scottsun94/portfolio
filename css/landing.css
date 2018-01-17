@@ -2,6 +2,7 @@
 body {
   font-size: 20px;
   line-height: 1.6;
+  box-sizing: border-box;
   background: white;
 }
 @media screen and (max-width: 992px) {
@@ -405,7 +406,7 @@ p.project-desc a{
 
 @media screen and (max-width: 1200px) {
   #fh5co-aside {
-    width: 30%;
+    width: 25%;
   }
 }
 
@@ -570,6 +571,7 @@ p.project-desc a{
 @media screen and (max-width: 768px) {
   #fh5co-main {
     width: 100%;
+    margin-right: 0;
   }
 }
 
@@ -600,7 +602,7 @@ body.offcanvas #fh5co-aside {
   -o-transform: translateX(0);
   transform: translateX(0);
   width: 270px;
-  background: #323544;
+  background: #F0F8FC;
   z-index: 999;
   position: fixed;
 }
