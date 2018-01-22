@@ -14,10 +14,7 @@ body {
 .nav{
       display:block;
     }
-.nav .active a{
-  color: #ff5722 !important;
-  font-weight: 400 !important;
-}
+
 
 .label_top_20{
   margin-top: 20px;
