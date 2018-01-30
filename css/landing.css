@@ -852,8 +852,15 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
     }
 
     .nav_bottom{
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+    .nav_bottom h4{
+      font-size: 1.2rem;
+      line-height: 0.8;
+    }
+    .nav_bottom small{
+      margin-bottom: 0px;
     }
 }
 
