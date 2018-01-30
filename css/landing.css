@@ -38,6 +38,24 @@ body {
 #scrollup:hover {
     background-image: url(../img/scrollup_hover.png);
 }
+.nav_bottom h4{
+  color: rgb(50,50,50)!important;
+}
+.nav_bottom small{
+  display: block;
+  margin-bottom: 10px;
+  color: rgb(130,130,130);
+}
+.nav_bottom .prev_bottom{
+  height: 15px;
+  margin-left: -16px;
+  width: auto;
+}
+.nav_bottom .next_bottom{
+  height: 15px;
+  margin-right: -16px;
+  width: auto;
+}
 
 .btn-info{
     border-color: #fff; !important;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="48px" viewBox="0 0 26 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>prev_bottom</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="prev_bottom" transform="translate(13.000000, 24.000000) scale(-1, 1) rotate(-90.000000) translate(-13.000000, -24.000000) translate(-11.000000, 11.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M44.0602955,0.668931539 L24.1135357,20.6386727 L3.87125497,0.798079842 C2.98239076,-0.0824823673 1.53787757,-0.0793399229 0.645281246,0.804857663 L0.645281246,0.80491928 C-0.247439479,1.68917848 -0.25054957,3.11991492 0.866470969,4.00010743 L22.2322412,25.1648401 C22.5548199,25.4503712 22.9358684,25.7784793 23.1415698,25.8328868 C23.9804238,26.1672182 25.011046,25.9998676 25.8582971,25.3310815 L47.522574,3.87065105 C48.1904973,2.98263324 48.1939806,1.54530382 47.3010732,0.660859771 C46.4084147,-0.223337816 44.9573703,-0.219825672 44.0602955,0.668685073 L44.0602955,0.668931539 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
