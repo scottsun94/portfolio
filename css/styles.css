@@ -892,6 +892,9 @@ Contact page
   .project3{
     background-image: url("../img/proj3_background_mobile.png");
   }
+  .intern{
+    background-image: url("../img/intern_background.png");
+  }
 
   .proj_label{
     font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
