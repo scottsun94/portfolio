@@ -712,7 +712,7 @@ Contact page
         height: 40px;
         line-height: 27px;
         font-size: 17px;
-        font-family:'PT Sans', "Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-family:"Helvetica Neue","Helvetica","Arial",sans-serif;
     }
     div#tabs a#after:after, div#tabs a#before:before{
         vertical-align: -10%;
@@ -725,8 +725,9 @@ Contact page
 
     h2.page-header{
         
-        font-size: 25px;
-        font-family: 'PT Sans', "Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-size: 22px;
+        font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-weight: 600;
     }
 
     h2.update{
@@ -738,7 +739,7 @@ Contact page
     }
 
     h3.overview_subtitle{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     h3.project_subtitle{
@@ -885,7 +886,7 @@ Contact page
   }
 
   .proj_label{
-    font-family: PT Sans,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
     margin-top: 50vh;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -910,7 +911,7 @@ Contact page
   }
 
   .intern_label{
-    font-family: PT Sans,"Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
     margin-top:45vh;
     padding-left: 1rem;
     padding-right: 1rem;
