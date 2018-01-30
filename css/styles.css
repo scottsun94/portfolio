@@ -71,7 +71,7 @@ ul li {
 	/*padding: 25px 0;*/
 }
 #header.fixed .nav-toggle {
-	top: 18px;
+	top: 45px;
 }
 .logo img {
 	width:9vw;
@@ -852,6 +852,7 @@ Contact page
 	.introduction{
 	  margin-left: 4vw;
 	  margin-top: 1vw;
+    display: none;
 	}
 
 	.letter{
