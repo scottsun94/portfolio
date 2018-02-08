@@ -17,6 +17,6 @@ body.offcanvas #fh5co-aside {
 }
 .nav .active a{
   color: #1CBEBC !important;
-/*  font-weight: 500 !important;*/
+  font-weight: 500 !important;
 /*  font-size: 14px !important;*/
 }
