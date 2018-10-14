@@ -299,7 +299,7 @@ project page
 }
 
 .introduction_mobile .intro_mobile_1{
-  margin-top: 20vh;
+  margin-top: 15vh;
   color: rgb(220,220,220); 
   font-size: 10vw;
   font-weight: 900;
@@ -869,7 +869,7 @@ Contact page
 	}
 	.arrow_down_mobile{
 		text-align: center;
-		margin-top: 13vw;
+		margin-top: 14vw;
 	}
 	.arrow_down_mobile img{
 		width: 16px;
