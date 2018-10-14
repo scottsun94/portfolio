@@ -300,17 +300,17 @@ project page
 
 .introduction_mobile .intro_mobile_1{
   margin-top: 20vh;
-  color: rgb(20,20,20); 
+  color: rgb(220,220,220); 
   font-size: 10vw;
   font-weight: 900;
 }
 .introduction_mobile .intro_mobile_2{
-  color: rgb(20,20,20); 
+  color: rgb(220,220,220); 
   font-size: 6vw;
   font-weight: 600;
 }
 .introduction_mobile .intro_mobile_3{
-  color: rgb(120,120,120); 
+  color: rgb(150,150,150); 
   font-size: 5vw;
   font-weight: 300;
 }
@@ -866,6 +866,13 @@ Contact page
 	}
 	.arrow_down img{
 		width: 24px;
+	}
+	.arrow_down_mobile{
+		text-align: center;
+		margin-top: 25vw;
+	}
+	.arrow_down_mobile img{
+		width: 16px;
 	}
 	.static_profile{
 		display: block;
