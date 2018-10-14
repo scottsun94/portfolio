@@ -278,7 +278,7 @@ project page
 }
 .arrow_down{
 	text-align: center;
-	margin-top: 2.2vh;
+	margin-top: 2.5vh;
 }
 .arrow_down img{
 	width:14px;
@@ -306,11 +306,13 @@ project page
   color: rgb(220,220,220); 
   font-size: 8vw;
   font-weight: 900;
+  margin-bottom: 0.6rem;
 }
 .introduction_mobile .intro_mobile_2{
   color: rgb(220,220,220); 
   font-size: 6vw;
   font-weight: 600;
+  margin-bottom: 0.6rem;
 }
 .introduction_mobile .intro_mobile_3{
   color: rgb(150,150,150); 
