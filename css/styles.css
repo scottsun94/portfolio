@@ -265,7 +265,7 @@ project page
 
 .intro{
   /*width: 100%;*/
-  margin-top: 1.5vw;
+  margin-top: 2.6vh;
   text-align: center;
   color:rgb(30, 30, 30);
 }
@@ -278,7 +278,10 @@ project page
 }
 .arrow_down{
 	text-align: center;
-	margin-top: 1.5vw;
+	margin-top: 2.2vh;
+}
+.arrow_down img{
+	width:14px;
 }
 
 /*nodes garden animation*/
@@ -864,14 +867,14 @@ Contact page
 		text-align: center;
 		margin-top: 5vh;
 	}
-	.arrow_down img{
+	.arrow_down img {
 		width: 12px;
 	}
 	.arrow_down_mobile{
 		text-align: center;
 		margin-top: 16vh;
 	}
-	.arrow_down_mobile img{
+	.arrow_down_mobile img {
 		width: 16px;
 	}
 	.static_profile{
