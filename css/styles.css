@@ -862,14 +862,14 @@ Contact page
 	}
 	.arrow_down{
 		text-align: center;
-		margin-top: 13vw;
+		margin-top: 5vh;
 	}
 	.arrow_down img{
 		width: 24px;
 	}
 	.arrow_down_mobile{
 		text-align: center;
-		margin-top: 18vw;
+		margin-top: 8vh;
 	}
 	.arrow_down_mobile img{
 		width: 16px;
