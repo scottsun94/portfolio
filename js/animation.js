@@ -1,19 +1,17 @@
 // var myVar = setInterval(createDots, 1000/30);
 var canvas = document.querySelector('canvas'),
       ctx = canvas.getContext('2d'),
-      colorDot = 'rgb(30,30,60)',
-      color = 'rgb(0,0,20)';
-  canvas.width = window.innerWidth/1.2;
-  canvas.height = window.innerHeight/2;
+      colorDot = 'rgb(230,230,230)',
+      color = 'rgb(250,250,250)';
+  canvas.width = window.innerWidth/1;
+  canvas.height = window.innerHeight/1.6;
   canvas.style.display = 'block';
   ctx.fillStyle = colorDot;
-  ctx.lineWidth = .1;
+  ctx.lineWidth = .2;
   ctx.strokeStyle = color;
 
 var canvasDots = function() {
-  console.log(11)
   
-
   var mousePosition = {
     x: 30 * canvas.width / 100,
     y: 30 * canvas.height / 100
@@ -22,13 +20,13 @@ var canvasDots = function() {
   var dots = {
     nb: 350,
     distance: 50,
-    d_radius: 90,
+    d_radius: 120,
     array: []
   };
 
   function Dot(){
-    this.x = Math.random() * window.innerWidth/1.2;
-    this.y = Math.random() * window.innerHeight/2;
+    this.x = Math.random() * window.innerWidth/1;
+    this.y = Math.random() * window.innerHeight/1.6;
 
     this.vx = -.5 + Math.random();
     this.vy = -.5 + Math.random();
@@ -68,8 +66,23 @@ var canvasDots = function() {
           j_dot = dots.array[j];
 
           if((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > - dots.distance && (i_dot.y - j_dot.y) > - dots.distance){
-            if((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > - dots.d_radius && (i_dot.y - mousePosition.y) > - dots.d_radius){
+            if((i_dot.x - mousePosition.x) < dots.d_radius/3 && (i_dot.y - mousePosition.y) < dots.d_radius/3 && (i_dot.x - mousePosition.x) > - dots.d_radius/3 && (i_dot.y - mousePosition.y) > - dots.d_radius/3){
               ctx.beginPath();
+              ctx.strokeStyle = color;
+              ctx.moveTo(i_dot.x, i_dot.y);
+              ctx.lineTo(j_dot.x, j_dot.y);
+              ctx.stroke(); 
+              ctx.closePath();
+            } else if ((i_dot.x - mousePosition.x) < dots.d_radius/2 && (i_dot.y - mousePosition.y) < dots.d_radius/2 && (i_dot.x - mousePosition.x) > - dots.d_radius/2 && (i_dot.y - mousePosition.y) > - dots.d_radius/2) {
+              ctx.beginPath();
+              ctx.strokeStyle = 'rgb(180,180,180)';
+              ctx.moveTo(i_dot.x, i_dot.y);
+              ctx.lineTo(j_dot.x, j_dot.y);
+              ctx.stroke();
+              ctx.closePath();
+            } else if ((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > - dots.d_radius && (i_dot.y - mousePosition.y) > - dots.d_radius) {
+              ctx.beginPath();
+              ctx.strokeStyle = 'rgb(50,50,50)';
               ctx.moveTo(i_dot.x, i_dot.y);
               ctx.lineTo(j_dot.x, j_dot.y);
               ctx.stroke();
@@ -104,41 +117,47 @@ var canvasDots = function() {
     dot.line();
     dot.animate();
 
-
-    if(mousePosition.x > 0 * window.innerWidth/1.2 && mousePosition.x < 0.4 * window.innerWidth/1.2 && mousePosition.y > 0.05 * window.innerHeight/2 && mousePosition.y < 0.3 * window.innerHeight/2){
-      ctx.font = "18px courier";
+    //left, top
+    if(mousePosition.x > 0 * canvas.width && mousePosition.x < 0.4 * canvas.width && mousePosition.y > 0.05 * canvas.height && mousePosition.y < 0.3 * canvas.height){
+      ctx.font = "16px Kite One";
       ctx.fillText("Philosophy",mousePosition.x+20,mousePosition.y+30);
     }
-    if(mousePosition.x > 0.35 * window.innerWidth/1.2 && mousePosition.x < 0.65 * window.innerWidth/1.2 && mousePosition.y > 0.4 * window.innerHeight/2 && mousePosition.y < 0.6 * window.innerHeight/2){
-      ctx.font = "18px courier";
+    //middle, middle
+    if(mousePosition.x > 0.35 * canvas.width && mousePosition.x < 0.65 * canvas.width && mousePosition.y > 0.4 * canvas.height && mousePosition.y < 0.6 * canvas.height){
+      ctx.font = "16px Kite One";
       ctx.fillText("Design",mousePosition.x+20,mousePosition.y+30);
     }
-    if(mousePosition.x > 0.7 * window.innerWidth/1.2 && mousePosition.x < 1 * window.innerWidth/1.2 && mousePosition.y > 0.05 * window.innerHeight/2 && mousePosition.y < 0.3 * window.innerHeight/2){
-      ctx.font = "18px courier";
+    //right, top
+    if(mousePosition.x > 0.7 * canvas.width && mousePosition.x < 1 * canvas.width && mousePosition.y > 0.05 * canvas.height && mousePosition.y < 0.3 * canvas.height){
+      ctx.font = "16px Kite One";
       ctx.fillText("Psychology",mousePosition.x+20,mousePosition.y+30);
     }
-    if(mousePosition.x > 0.05 * window.innerWidth/1.2 && mousePosition.x < 0.3 * window.innerWidth/1.2 && mousePosition.y > 0.4 * window.innerHeight/2 && mousePosition.y < 0.6 * window.innerHeight/2){
-      ctx.font = "18px courier";
-      ctx.fillText("Artificial Intelligence",mousePosition.x+20,mousePosition.y+30);
+    //left, middle
+    if(mousePosition.x > 0.05 * canvas.width && mousePosition.x < 0.3 * canvas.width && mousePosition.y > 0.4 * canvas.height && mousePosition.y < 0.6 * canvas.height){
+      ctx.font = "16px Kite One";
+      ctx.fillText("Economics",mousePosition.x+20,mousePosition.y+30);
     }
-    if(mousePosition.x > 0.7 * window.innerWidth/1.2 && mousePosition.x < 0.95 * window.innerWidth/1.2 && mousePosition.y > 0.4 * window.innerHeight/2 && mousePosition.y < 0.6 * window.innerHeight/2){
-      ctx.font = "18px courier";
+    //right, middle
+    if(mousePosition.x > 0.7 * canvas.width && mousePosition.x < 0.95 * canvas.width && mousePosition.y > 0.4 * canvas.height && mousePosition.y < 0.6 * canvas.height){
+      ctx.font = "16px Kite One";
       ctx.fillText("Coding",mousePosition.x+20,mousePosition.y+30);
     }
-    if(mousePosition.x > 0 * window.innerWidth/1.2 && mousePosition.x < 0.4 * window.innerWidth/1.2 && mousePosition.y > 0.7 * window.innerHeight/2 && mousePosition.y < 0.9 * window.innerHeight/2){
-      ctx.font = "18px courier";
+    //left, bottom
+    if(mousePosition.x > 0 * canvas.width && mousePosition.x < 0.4 * canvas.width && mousePosition.y > 0.7 * canvas.height && mousePosition.y < 0.9 * canvas.height){
+      ctx.font = "16px Kite One";
       ctx.fillText("Entrepreneurship & Ownership",mousePosition.x+20,mousePosition.y+30);
     }
-    if(mousePosition.x > 0.7 * window.innerWidth/1.2 && mousePosition.x < 1 * window.innerWidth/1.2 && mousePosition.y > 0.7 * window.innerHeight/2 && mousePosition.y < 0.9 * window.innerHeight/2){
-      ctx.font = "18px courier";
-      ctx.fillText("Business",mousePosition.x+20,mousePosition.y+30);
+    //right, bottom
+    if(mousePosition.x > 0.7 * canvas.width && mousePosition.x < 1 * canvas.width && mousePosition.y > 0.7 * canvas.height && mousePosition.y < 0.9 * canvas.height){
+      ctx.font = "16px Kite One";
+      ctx.fillText("History",mousePosition.x+20,mousePosition.y+30);
     }
   }
 
 
   window.onmousemove = function(parameter) {
-    mousePosition.x = parameter.pageX - 125;
-    mousePosition.y = parameter.pageY - 120;
+    mousePosition.x = parameter.pageX - 15;
+    mousePosition.y = parameter.pageY - 100;
   }
 
   // createDots();

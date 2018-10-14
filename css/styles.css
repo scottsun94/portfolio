@@ -18,7 +18,11 @@ body {
   min-height: 100%;
   margin: 0;
   padding-bottom: 3rem;
-  background-color: white;
+}
+#index{
+background-color: #2b4162;
+background-image: linear-gradient(340deg, #141E30 0%, #12100e 74%);
+
 }
 .container-fluid {
   padding-right: 15px;
@@ -59,6 +63,7 @@ ul li {
 	-webkit-transition: padding 0.3s;
 	transition: padding 0.3s;
 }
+
 #header .logo {
 
   float: left;
@@ -75,7 +80,7 @@ ul li {
 	top: 45px;
 }
 .logo img {
-	width:9vw;
+	width:7vw;
 }
 .navigation.open {
 	opacity: 0.9;
@@ -95,7 +100,15 @@ ul li {
 	display: inline-block;
 }
 .navigation a {
-	color: rgba(30, 30, 30, 0.75);
+	color: rgba(100, 100, 100, 0.75);
+	font-size: 13px;
+	font-weight: 400;
+	margin-left: 40px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+#navigation-home a {
+	color: rgba(230, 230, 230, 0.75);
 	font-size: 13px;
 	font-weight: 400;
 	margin-left: 40px;
@@ -252,20 +265,20 @@ project page
 
 .intro{
   /*width: 100%;*/
-  margin-top: 1vw;
+  margin-top: 1.5vw;
   text-align: center;
   color:rgb(30, 30, 30);
 }
 
 .lead{
-  font-family: 'Cutive Mono', monospace;
-  font-size: 1.8vw;
-  font-weight:800;
-  color:rgb(30, 30, 30);
+  font-family: 'Kite One','Gafata','Mada', 'Jaldi','Alegreya Sans SC','Julius Sans One','Yantramanav','Maven Pro','Muli', 'PT Sans','Raleway','Source Sans Pro','Abel','Codystar','Monoton','Comfortaa','Roboto', sans-serif;
+  font-size: 1.1vw;
+  font-weight:200;
+  color:rgb(230, 230, 230);
 }
 .arrow_down{
 	text-align: center;
-	margin-top: 3vw;
+	margin-top: 1.5vw;
 }
 
 /*nodes garden animation*/
@@ -276,7 +289,9 @@ project page
 #canvas{
   margin:0 auto;
   margin-top: 2.5vw;
-  margin-bottom: 2.5vw;
+  margin-bottom: 0.5vw;
+  margin-left: 0vw;
+  margin-right: 0vw;
   display: block;
 }
 .introduction_mobile{
@@ -608,7 +623,7 @@ project page
 profile page
 -------------------------------------------------------------------------------*/
 .introduction{
-  margin-left: 6vw;
+  margin-left: 5vw;
   margin-top: 2vw;
 }
 .static_profile{
