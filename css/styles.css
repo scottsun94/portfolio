@@ -91,8 +91,8 @@ ul li {
 	transition: opacity 0.5s;
 }
 .navigation {
-  float:right;
-  padding-top: 11pt;
+  	float:right;
+  	padding-top: 11pt;
 	padding-right: 62pt;
 }
 
@@ -252,6 +252,10 @@ ul li {
 	-ms-transform: translateY(0) rotate(-45deg);
 	-webkit-transform: translateY(0) rotate(-45deg);
 	transform: translateY(0) rotate(-45deg);
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+	background: white;
 }
 /* ------------------------------------------------------------------------------
 project page
@@ -623,6 +627,10 @@ project page
 .signature-1,.signature-2{
   font-family: 'Roboto', sans-serif;
   font-size:14px;
+}
+
+.collapse.in {
+  display: block;
 }
 /* ------------------------------------------------------------------------------
 profile page
