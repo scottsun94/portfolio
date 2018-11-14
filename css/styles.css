@@ -20,9 +20,13 @@ body {
   padding-bottom: 3rem;
 }
 #index{
-background-color: #2b4162;
-background-image: linear-gradient(340deg, #141E30 0%, #12100e 74%);
-
+/*background-color: #2b4162;*/
+/*background-image: linear-gradient(340deg, #141E30 0%, #000428 74%);*/
+background:url('../img/animation_background.png') no-repeat center center fixed;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .container-fluid {
   padding-right: 15px;
