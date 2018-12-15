@@ -31,11 +31,12 @@
       display: block;
       margin-bottom: 20px; }
     .navigation a {
-      color: white;
+      color: rgba(230, 230, 230, 0.75);
       display: block;
-      font-size: 25px;
-      margin: 0;
-      text-align: center; }
+      font-size: 32px;
+      margin: 40px auto;
+      text-align: center; 
+    }
 
 
   .person {
@@ -56,6 +57,13 @@
     bottom: 20px; } }
 
 @media screen and (max-width: 767px) {
+  .navigation a {
+      color: rgba(230, 230, 230, 0.75);
+      display: block;
+      font-size: 18px;
+      margin: 20px auto;
+      text-align: center; 
+  }
 	#header .header-content {
 		 padding: 35px 0;
 	}
