@@ -139,7 +139,7 @@ ul li {
 }
 .nav-toggle:before, .nav-toggle:after {
 	border-radius: 50%;
-	content: "";
+/*	content: "";*/
 	height: 100%;
 	left: 0;
 	position: absolute;
@@ -183,12 +183,12 @@ ul li {
 	background-color: #fff;
 	bottom: auto;
 	display: inline-block;
-	height: 3px;
+	height: 2px;
 	left: 50%;
 	position: absolute;
 	right: auto;
 	top: 50%;
-	width: 18px;
+	width: 20px;
 	z-index: 10;
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-ms-transform: translateX(-50%) translateY(-50%);
@@ -854,7 +854,7 @@ Contact page
   	position: absolute;
   	right: auto;
   	top: 50%;
-  	width: 16px;
+  	width: 20px;
   	z-index: 10;
   	-moz-transform: translateX(-50%) translateY(-50%);
   	-ms-transform: translateX(-50%) translateY(-50%);
