@@ -270,6 +270,29 @@ ul li {
 /* ------------------------------------------------------------------------------
 project page
 -------------------------------------------------------------------------------*/
+.bg_grey{
+  background-color: #f6f6f6;
+  padding:20px 80px;
+  margin: 0 -80px;
+}
+.collapsible-button{
+	margin: 3vh 0 4vh 0;
+	text-align: center;
+}
+.collapse-btn{
+	border: 1px solid #676767;
+	border-radius: 6px;
+	color: #676767;
+}
+.collapse-btn:hover{
+	background-color: #676767;
+	color: #ffffff;
+}
+.collapse-btn:focus{
+	outline:inherit;
+	box-shadow: inherit;
+}
+
 .name{
   font-size: 1.8vw;
   font-family: 'Cutive Mono', monospace;
@@ -796,6 +819,9 @@ Contact page
         letter-spacing: 0.03em;
         text-align: left;
     }
+    h3.detail_subtitle{
+        font-size: 18px;
+    }
 
     h3.project_subtitle:before{
         vertical-align: -70%;
@@ -817,7 +843,8 @@ Contact page
         margin: 20px auto;
         margin-left: -10px;
     }
-    h3.overview_subtitle:before{
+    
+    .overview_subtitle:before{
         vertical-align: -50%;
     }
     h4.cic-winner{

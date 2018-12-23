@@ -350,6 +350,15 @@ h3.overview_subtitle{
     font-family: 'PT Sans',"Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
     padding-bottom: 20px;
 }
+h3.detail_subtitle{
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    padding-top: 30px;
+    text-align: left;
+    font-family: 'Open Sans',"Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+    padding-bottom: 20px;
+}
 hr{
   margin-top: 1.5rem;
 }
@@ -561,9 +570,10 @@ p.project-desc a{
 }*/
 
 #fh5co-main {
-  width: 75%;
+  width: 81%;
   float: right;
-  margin-right: 3%;
+/*  padding-left:1%;
+  padding-right: 1%;*/
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -592,8 +602,9 @@ p.project-desc a{
 
 #fh5co-main .fh5co-narrow-content {
   position: relative;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  padding:0 80px;
 }
 
 #fh5co-main .fh5co-narrow-content a {
