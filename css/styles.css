@@ -285,8 +285,9 @@ project page
 	color: #676767;
 }
 .collapse-btn:hover{
-	background-color: #676767;
+	background-color: #00AEEF;
 	color: #ffffff;
+	border: 1px solid #00AEEF;
 }
 .collapse-btn:focus{
 	outline:inherit;
