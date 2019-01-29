@@ -267,9 +267,173 @@ ul li {
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
 	background: white;
 }
+
+
+
 /* ------------------------------------------------------------------------------
 project page
 -------------------------------------------------------------------------------*/
+
+/*
+sidebar navigation
+*/
+
+#fh5co-aside a.btn-back{
+    font-family:"Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    color: rgb(140,140,140);
+    font-weight: 300;
+}
+
+#fh5co-aside p.product_name{
+    font-family: "Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 16px;
+    margin-bottom: 0.8rem;
+    margin-top: 0.5rem;
+    color: #4A4A4A;
+}
+
+#fh5co-aside #fh5co-main-menu ul li {
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+  line-height: 1.3;
+  color: rgb(100,100,100);
+
+}
+
+#fh5co-aside #fh5co-main-menu ul li a {
+  color: #4A4A4A;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  padding: 10px 7px;
+  letter-spacing: .1em;
+  font-family: "Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+  text-transform: uppercase;
+}
+
+#fh5co-aside #fh5co-main-menu ul li a.sub{
+    color: #737373;  
+    font-size: 14px;
+    letter-spacing: .10em;
+    padding-left: 2px 0 2px 15px !important;
+    font-family: "Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 300;
+    text-transform: none !important;
+}
+
+#fh5co-aside #fh5co-main-menu ul li a.sub:before{
+    content: "· "
+}
+
+#fh5co-aside #fh5co-main-menu ul li a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 7px;
+  left: 10px;
+  right: 10px;
+}
+
+#fh5co-aside #fh5co-main-menu ul li a:hover {
+  text-decoration: underline;
+/*  color: #FF5722;*/
+}
+
+#fh5co-main {
+  width: 81%;
+  float: right;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#fh5co-main_detail {
+  width: 81%;
+  margin: 0 auto;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+
+
+
+/*
+Ttile, body fonts
+*/
+h2.page-header{
+    margin: 70px 0 20px 0;
+    color: #4A4A4A;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+
+}
+
+h3.overview_subtitle{
+    color: #4A4A4A;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 30px;
+    text-align: left;
+    font-family: "Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+    padding-bottom: 20px;
+}
+
+
+h3.detail_subtitle{
+    font-size: 20px;
+    color: #4A4A4A;
+    font-weight: 400;
+    padding-top: 30px;
+    text-align: left;
+    font-family: "Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+    padding-bottom: 20px;
+}
+
+p.project-desc {
+  color:#676767;
+  font-size:1rem;
+  line-height: 2rem;
+  text-align:left;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+p.project-desc a{
+  font-size:1rem;
+  font-weight:300;
+}
+p.bullet {
+  color:#4A4A4A;
+  font-size:1.4rem;
+  line-height: 2rem;
+  text-align:left;
+  font-weight: 400;
+  font-family: "Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+
+
+/*
+img, video, prototype
+*/
+
+img{
+    width: 100%;
+    margin: 1em 0;
+}
+
+
+
 .videoWrapper{
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
@@ -284,8 +448,8 @@ project page
 	height: 100%;
 }
 .bg_grey{
-  background-color: #f6f6f6;
-  padding:20px 80px;
+  background-color: #F7F7F7;
+  padding:20px 80px 40px;
   margin: 0 -80px;
 }
 .collapsible-button{
@@ -373,22 +537,22 @@ project page
 
 
 .proj_name{
-  font-size: 3rem;
+  font-size: 2.2rem;
   margin-bottom: 0.5rem;
-  font-weight: 900;
+  font-weight: 500;
 }
 .proj_intro{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 
 }
 .proj_tag{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 
 .proj_label{
-	font-family: PT Sans,"Helvetica Neue","Helvetica","Arial",sans-serif;
-	margin-top: 55vh;
+	font-family: "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+	margin-top: 56vh;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-bottom: 1rem;
@@ -397,12 +561,32 @@ project page
 	background-color: white;
 	box-shadow: 0px 5px 30px rgba(0,0,0,0.5);
 }
-
+#proj0_shortline{
+	background-color:#E95555;
+	height: 2px;
+	width: 1.5rem; 
+	margin-bottom: 0.5rem;
+}
+#proj0_shortline{
+	-webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
+    transition: color 0.5s, background-color 0.5s;
+}
+#proj0_label {
+	-webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
+    transition: color 0.5s, background-color 0.5s;
+}
+#proj0_label:hover {
+	color: white;
+	background-color: #E95555;
+}
+#proj0_label:hover #proj0_shortline{
+	background-color:white;
+}
 #proj1_shortline{
 	background-color:#1CBEBC;
 	height: 2px;
 	width: 1.5rem; 
-	margin-bottom: 0.4rem;
+	margin-bottom: 0.5rem;
 }
 #proj1_shortline{
 	-webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
@@ -424,7 +608,7 @@ project page
 	background-color:#0074B7;
 	height: 2px;
 	width: 1.5rem; 
-	margin-bottom: 0.4rem;
+	margin-bottom: 0.5rem;
 }
 #proj2_shortline{
 	-webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
@@ -446,7 +630,7 @@ project page
 	background-color:#ff5722;
 	height: 2px;
 	width: 1.5rem; 
-	margin-bottom: 0.4rem;
+	margin-bottom: 0.5rem;
 }
 #proj3_shortline{
 	-webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
@@ -514,6 +698,18 @@ project page
 
 }
 
+.project0{
+	margin-left: 0;
+	height: 100vh;
+	background-image: url("../img/proj0_background.png");
+	background-repeat: no-repeat;
+    background-size: 100%
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+/*  background: #74ebd5;*/ /* For browsers that do not support gradients */
+}
 .project1{
 	margin-left: 0;
 	height: 100vh;

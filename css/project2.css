@@ -1,6 +1,9 @@
 .product_name{
 	color: rgb(80,80,80);
 }
+#fh5co-aside{
+  background-color: #ffffff;
+}
 body.offcanvas #fh5co-aside {
   -moz-transform: translateX(0);
   -webkit-transform: translateX(0);
@@ -15,6 +18,6 @@ body.offcanvas #fh5co-aside {
 
 .nav .active a{
   color: #085eb9 !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 /*  font-size: 14px !important;*/
 }
