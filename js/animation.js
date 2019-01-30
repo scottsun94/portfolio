@@ -16,7 +16,6 @@ var canvas = document.querySelector('canvas'),
   ctx.fillStyle = colorDot;
   ctx.lineWidth = .2;
   ctx.strokeStyle = color;
-  console.log(colorDots);
 
 var canvasDots = function() {
   
@@ -26,8 +25,8 @@ var canvasDots = function() {
   };
 
   var dots = {
-    nb: 350,
-    distance: 80,
+    nb: 300,
+    distance: 70,
     d_radius: 120,
     array: []
   };
@@ -106,12 +105,12 @@ var canvasDots = function() {
   function createDots(){
     ctx.clearRect(0, 0, 10000, 10000);
 
-    window.onresize = function(){
-      for(i = 0; i < dots.nb; i++){
-        dots.array[i] = new Dot();
-      }
+    // window.onresize = function(){
+    //   for(i = 0; i < dots.nb; i++){
+    //     dots.array[i] = new Dot();
+    //   }
 
-    }
+    // }
 
     for(i = 0; i < dots.nb; i++){
       dots.array.push(new Dot());
