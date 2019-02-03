@@ -472,7 +472,7 @@ img{
 }
 
 .name{
-  font-size: 1.8vw;
+  font-size: 3.6vh;
   font-family: 'Cutive Mono', monospace;
   font-weight:800;
   color:rgb(30, 30, 30);
@@ -480,20 +480,20 @@ img{
 
 .intro{
   /*width: 100%;*/
-  margin-top: 2.6vh;
+  margin-top: 3vh;
   text-align: center;
   color:rgb(30, 30, 30);
 }
 
 .lead{
   font-family: 'Kite One','Gafata','Mada', 'Jaldi','Alegreya Sans SC','Julius Sans One','Yantramanav','Maven Pro','Muli', 'PT Sans','Raleway','Source Sans Pro','Abel','Codystar','Monoton','Comfortaa','Roboto', sans-serif;
-  font-size: 1.1vw;
+  font-size: 2vh;
   font-weight:200;
   color:rgb(230, 230, 230);
 }
 .arrow_down{
 	text-align: center;
-	margin-top: 3vh;
+	margin-top: 2.6vh;
 }
 .arrow_down img{
 	width:14px;
@@ -506,8 +506,8 @@ img{
 }
 #canvas{
   margin:0 auto;
-  margin-top: 2.5vw;
-  margin-bottom: 0.5vw;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
   margin-left: 0vw;
   margin-right: 0vw;
   display: block;
@@ -650,8 +650,8 @@ img{
 
 
 .intern_label{
-	font-family: PT Sans,"Helvetica Neue","Helvetica","Arial",sans-serif;
-	margin-top:50vh;
+	font-family: "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+	margin-top: 58vh;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-bottom: 1rem;

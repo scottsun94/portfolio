@@ -9,9 +9,9 @@ var canvas = document.querySelector('canvas'),
   for (var i = colorNum-1; i >= 0; i--) {
     colorList = colorList.concat(colorListUnit);
   }
-  colorDots = colorList.concat(['rgb(50,50,50)']);
+  colorDots = colorList.concat(['rgb(80,80,80)']);
   canvas.width = window.innerWidth/1;
-  canvas.height = window.innerHeight/1.6;
+  canvas.height = window.innerHeight/1.8;
   canvas.style.display = 'block';
   ctx.fillStyle = colorDot;
   ctx.lineWidth = .2;
@@ -25,9 +25,9 @@ var canvasDots = function() {
   };
 
   var dots = {
-    nb: 300,
+    nb: 250,
     distance: 70,
-    d_radius: 120,
+    d_radius: 110,
     array: []
   };
 
@@ -105,12 +105,14 @@ var canvasDots = function() {
   function createDots(){
     ctx.clearRect(0, 0, 10000, 10000);
 
-    // window.onresize = function(){
-    //   for(i = 0; i < dots.nb; i++){
-    //     dots.array[i] = new Dot();
-    //   }
+    window.onresize = function(){
+      canvas.width = window.innerWidth/1;
+      canvas.height = window.innerHeight/1.8;
+      for(i = 0; i < dots.nb; i++){
+        dots.array[i] = new Dot();
+      }
 
-    // }
+    }
 
     for(i = 0; i < dots.nb; i++){
       dots.array.push(new Dot());
@@ -129,43 +131,43 @@ var canvasDots = function() {
     if(mousePosition.x > 0 * canvas.width && mousePosition.x < 0.4 * canvas.width && mousePosition.y > 0.05 * canvas.height && mousePosition.y < 0.3 * canvas.height){
       ctx.font = "600 16px Kite One";
       ctx.fillStyle = "#FFFFFF";
-      ctx.fillText("Philosophy",mousePosition.x+20,mousePosition.y+30);
+      ctx.fillText("Philosophy",mousePosition.x+20,mousePosition.y+10);
     }
     //middle, middle
     if(mousePosition.x > 0.35 * canvas.width && mousePosition.x < 0.65 * canvas.width && mousePosition.y > 0.4 * canvas.height && mousePosition.y < 0.6 * canvas.height){
       ctx.font = "600 16px Kite One";
       ctx.fillStyle = "#FFFFFF";
-      ctx.fillText("Design",mousePosition.x+20,mousePosition.y+30);
+      ctx.fillText("Design",mousePosition.x+20,mousePosition.y+10);
     }
     //right, top
     if(mousePosition.x > 0.7 * canvas.width && mousePosition.x < 1 * canvas.width && mousePosition.y > 0.05 * canvas.height && mousePosition.y < 0.3 * canvas.height){
       ctx.font = "600 16px Kite One";
       ctx.fillStyle = '#FFFFFF';
-      ctx.fillText("Psychology",mousePosition.x+20,mousePosition.y+30);
+      ctx.fillText("Psychology",mousePosition.x+20,mousePosition.y+10);
     }
     //left, middle
     if(mousePosition.x > 0.05 * canvas.width && mousePosition.x < 0.3 * canvas.width && mousePosition.y > 0.4 * canvas.height && mousePosition.y < 0.6 * canvas.height){
       ctx.font = "600 16px Kite One";
       ctx.fillStyle = '#FFFFFF';
-      ctx.fillText("Economics",mousePosition.x+20,mousePosition.y+30);
+      ctx.fillText("Economics",mousePosition.x+20,mousePosition.y+10);
     }
     //right, middle
     if(mousePosition.x > 0.7 * canvas.width && mousePosition.x < 0.95 * canvas.width && mousePosition.y > 0.4 * canvas.height && mousePosition.y < 0.6 * canvas.height){
       ctx.font = "600 16px Kite One";
       ctx.fillStyle = '#FFFFFF';
-      ctx.fillText("Coding",mousePosition.x+20,mousePosition.y+30);
+      ctx.fillText("Coding",mousePosition.x+20,mousePosition.y+10);
     }
     //left, bottom
     if(mousePosition.x > 0 * canvas.width && mousePosition.x < 0.4 * canvas.width && mousePosition.y > 0.7 * canvas.height && mousePosition.y < 0.9 * canvas.height){
       ctx.font = "600 16px Kite One";
       ctx.fillStyle = '#FFFFFF';
-      ctx.fillText("Entrepreneurship & Ownership",mousePosition.x+20,mousePosition.y+30);
+      ctx.fillText("Entrepreneurship & Ownership",mousePosition.x+20,mousePosition.y+10);
     }
     //right, bottom
     if(mousePosition.x > 0.7 * canvas.width && mousePosition.x < 1 * canvas.width && mousePosition.y > 0.7 * canvas.height && mousePosition.y < 0.9 * canvas.height){
       ctx.font = "600 16px Kite One";
       ctx.fillStyle = '#FFFFFF' ;
-      ctx.fillText("History",mousePosition.x+20,mousePosition.y+30);
+      ctx.fillText("History",mousePosition.x+20,mousePosition.y+10);
     }
   }
 
