@@ -565,7 +565,7 @@ img{
 	background-color:#E95555;
 	height: 2px;
 	width: 1.5rem; 
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.6rem;
 }
 #proj0_shortline{
 	-webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
@@ -586,7 +586,7 @@ img{
 	background-color:#1CBEBC;
 	height: 2px;
 	width: 1.5rem; 
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.6rem;
 }
 #proj1_shortline{
 	-webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
@@ -608,7 +608,7 @@ img{
 	background-color:#0074B7;
 	height: 2px;
 	width: 1.5rem; 
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.6rem;
 }
 #proj2_shortline{
 	-webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
@@ -630,7 +630,7 @@ img{
 	background-color:#ff5722;
 	height: 2px;
 	width: 1.5rem; 
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.6rem;
 }
 #proj3_shortline{
 	-webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
@@ -666,10 +666,10 @@ img{
     font-weight: 900;
 }
 #intern_shortline{
-	background-color:#005AAE;
+	background-color:#4285F4;
 	height: 2px;
 	width: 1.5rem; 
-	margin-bottom: 0.4rem;
+	margin-bottom: 0.6rem;
 }
 #intern_shortline{
 	-webkit-transition: color 0.5s, background-color 0.5s; /* Safari */
@@ -681,7 +681,7 @@ img{
 }
 #intern_label:hover {
 	color: white;
-	background-color: #005AAE;
+	background-color: #4285F4;
 }
 #intern_label:hover #intern_shortline{
 	background-color:white;
