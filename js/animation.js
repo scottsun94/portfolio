@@ -9,12 +9,12 @@ var canvas = document.querySelector('canvas'),
   for (var i = colorNum-1; i >= 0; i--) {
     colorList = colorList.concat(colorListUnit);
   }
-  colorDots = colorList.concat(['rgb(80,80,80)']);
+  colorDots = colorList.concat(['rgb(120,120,120)']);
   canvas.width = window.innerWidth/1;
   canvas.height = window.innerHeight/1.8;
   canvas.style.display = 'block';
   ctx.fillStyle = colorDot;
-  ctx.lineWidth = .2;
+  ctx.lineWidth = 0.2;
   ctx.strokeStyle = color;
 
 var canvasDots = function() {
