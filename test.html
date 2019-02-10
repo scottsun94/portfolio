@@ -1,70 +1,275 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112307082-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112307082-1');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="img/favicon.ico"/>
     <title>Huaiwei Sun | Philosophia</title>
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Loaded font -->
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Navigation Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- full page scroll -->
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-    <!-- Loaded font -->
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Abel|Alegreya+Sans+SC|Asap+Condensed|Assistant|Average+Sans|Cabin|Carme|Catamaran:300,400|Didact+Gothic|Dosis|Gafata|Harmattan|Hind+Guntur|Hind+Siliguri|Jaldi|Julius+Sans+One|Kite+One|Lekton|Mada:200,400|Mako|Maven+Pro|Molengo|Muli:200,400|NTR|Noto+Sans+JP|Noto+Serif+JP|Noto+Serif+KR|Orienta|Oxygen|PT+Sans|Pontano+Sans|Questrial|Quicksand|Rajdhani:300,400|Raleway:100,400|Ruluko|Source+Sans+Pro:200,200i,300,300i,400|Timmana|Varela|Yantramanav:100,400');
+
+    body{
+/*    background:url('../img/body_bg.png') round center center fixed;
+     -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;*/
+      background-color: rgb(250,250,250);
+    }
+    .first{
+      padding-bottom: 4vw;
+      background:url('../img/bg_circles.png') no-repeat center top fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+</style>
+
   </head>
   <body>
 
-    <!-- Navigation -->
-    <div id="header">
-      <div class="header-content clearfix col-lg-12">
-        <a class="logo" href="#"><img src="img/logo.png" alt="Huaiwei Sun"></a>
-        <nav class="navigation" role="navigation">
-          <ul class="primary-nav">
-            <li><a href="#" style="color: #FF9C21;">Projects</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a target ="_blank" href="resources/resume.pdf">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <a href="#" class="nav-toggle">Menu<span></span></a>
-      </div>
-    </div>
+        <!-- Page Content -->
+        <div class="container-fluid first">
+              <!-- Navigation -->
+              <div id="header">
+                <div class="row">
+                  <div class="header-content clearfix col-lg-12">
+                    <a class="logo" href="#"><img src="img/logo.png" alt="Huaiwei Sun"></a>
+                    <nav id='navigation-home' class="navigation" role="navigation">
+                      <ul class="primary-nav">
+                        <li><a href="#" style="color: #FF9C21;">Projects</a></li>
+  <!--                       <li><a href="profile.html">Profile</a></li> -->
+                        <li><a href="resume.html" style="color: #000;">Resume</a></li>
+                        <li><a href="contact.html" style="color: #000;">Contact</a></li>
+                      </ul>
+                    </nav>
+                    <a href="#" class="nav-toggle">Menu<span></span></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Animation and intro -->
+              <div class="row">
+                <div class="fade_in introduction_laptop">
+                  <div class="col-lg-6 col-lg-push-2">
+                    <p class="" style="font-family: SFProText-Light;
+font-size: 1.5vw;
+color: #8E8E93;
+letter-spacing: 0;
+text-align: left; margin-top: 5vw">
+                      Hi there,
+                    </p>
+                    <p class="" style="font-family: Georgia;
+font-size: 4.2vw;
+color: #0B234B;
+letter-spacing: 2.57px;
+text-align: left;
+line-height: 5vw;  margin-top: 2vw">I’m Huaiwei Sun. A passionate designer with philosophía</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row fade_in">  
+                  <div class="col-lg-3 col-lg-push-5" >   
+                    <p class="" style="font-family: SFProText-Light;font-size: 1.2vw;color: #515151;letter-spacing: 0;text-align: left; margin-top: 7vw; border-left: 1px solid #1D1D1D; padding-left: 1vw">Connecting the dots through reading, thinking and creating</p>
+                  </div>
+              </div>
+<!--               <div class="row">  
+                <div class="col-12">
+                  <img src="img/bg_circles.png" style="position: fixed; left:0px; top: 0px; width: 100%; height:auto; z-index: -99">
+                </div>
+              </div> -->
+              <div class="row">
+                  <div class="arrow_down" style="margin-top: 6vw">
+                    <a href="#secondPage"><img  src="img/arrow.png"></a>
+                  </div>
+              </div>
 
-    <!-- Page Content -->
-    <div class="container-fluid">
-        <!-- Animation and intro -->
-        <div class = "onesection">
-          <div class ="col-lg-12"  >
-            <div id="animation"><canvas id="canvas"></canvas></div>
-          </div>
-          <div class="fade-in">
-            <div class="col-lg-12 intro">
-              <p class="lead">
-                Connecting the dots through reading, thinking and creating
-              </p>
-              <p class="lead">Product Creator | Philosophia, love of wisdom</p>
-              <p class="name"> I'm <a style = "color:#FF9C21; font-weight: 900" href="https://www.linkedin.com/in/scottsun94/" target="_blank" >Huaiwei Sun</a>, Nice to meet you :)</p>
-              <p> <br><br><br></p>
-            </div>
+              <div class="row">
+                <div class="col-lg-12 introduction_mobile">
+                  <p class="intro_mobile_1">Hi, I'm <a style = "color:#FF9C21" href="https://www.linkedin.com/in/scottsun94/" target="_blank" >Huaiwei Sun</a></p>
+                  <p class="intro_mobile_2">Nice to meet you : )</p>
+                  <p class="intro_mobile_3">I'm an intentional designer who is full of curiosity about this world and keeps connecting the dots through reading, thinking and creating!</p>
+                  <div class="arrow_down_mobile">
+                    <a href="#secondPage"><img  src="img/arrow.png"></a>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+        <!-- Project 0 -->
+        <div class="container-fluid odd" id ="proj" style="margin-top:6vw">
+            <div class="row" >
+              <a  href="project0.html" target="_blank">
+                <div class="col-lg-7 col-lg-push-1 col-md-7 col-sm-9">
+                  <div class="proj_img"><img src="img/test1.png"></div>
+                </div>
+                <div class="col-lg-5 col-lg-pull-1 col-md-5 col-sm-3" >
+                    <div class = "proj_label" >
+                      <p class="proj_name" >Art On the </br>Atlanta Beltline</p>
+                      <p class="proj_intro">Reshape the art experience of the Atlanta Beltline for visitors, artists, adjacent business owners and Beltline Employees</p>
+                      <div id = "proj_shortline" style="background: #E95555"></div>
+                      <p class="proj_tag">
+                        READ MORE
+                      </p> 
+                    </div> 
+                </div>
+             </a>
           </div>
         </div>
 
-          <!-- Project 1 -->
+
+
+        <!-- Intern -->
+        <div class="container-fluid even" id ="proj" style="margin-top:10vw">
+            <div class="row" >
+              <a  href="https://medium.com/@scottsun94/lessons-learnt-from-my-interaction-design-internship-4256887ae558" target="_blank">
+                <div class="col-lg-7 col-lg-push-4 col-md-7 col-sm-9">
+                  <div class="proj_img"><img src="img/test2.png"></div>
+                </div>
+                <div class="col-lg-5 col-lg-pull-6 col-md-5 col-sm-3" >
+                    <div class = "proj_label">
+                      <p class="proj_name">UX Design Intern, Google</p>
+                      <p class="proj_intro">My work focused on an in-house enterprise financial system</p>
+                      <div id = "proj_shortline" style="background: #4285F4"></div>
+                      <p class="proj_tag">
+                        SEE THE LESSONS I LEARNT!
+                      </p> 
+                    </div>
+                   
+                </div>
+              </a>
+            </div>
+        </div>
+
+        <!-- Intern -->
+<!--         <div class="container-fluid">
+          <div class = "intern" >
+            <div class="container">
+              <div class="row">
+                <div class="col-9 col-lg-5 col-sm-9 col-md-7">
+                  <a  href="https://medium.com/@scottsun94/lessons-learnt-from-my-interaction-design-internship-4256887ae558" target="_blank">
+                    <div id = "intern_label" class = "intern_label">
+                      <p class="intern_name">UX Design Intern, Google</p>
+                      <p class="proj_intro">My work focused on an in-house enterprise financial system</p>
+                      <div id = "intern_shortline"></div>
+                      <p class="proj_tag">
+                        See the lessons I learnt!
+                      </p>                 
+                    </div>        
+                  </a>
+                </div>
+                <div class="col-1 col-lg-7 col-md-5 col-sm-3" style="border: 0;">
+                </div>
+             </div>
+            </div>
+          </div>
+        </div> -->
+
+
+        <!-- Project 0 -->
+        <div class="container-fluid odd" id ="proj" style="margin-top:10vw">
+            <div class="row" >
+              <a  href="project3.html" target="_blank">
+                <div class="col-lg-7 col-lg-push-1 col-md-7 col-sm-9">
+                  <div class="proj_img"><img src="img/test3.png"></div>
+                </div>
+                <div class="col-lg-5 col-lg-pull-1 col-md-5 col-sm-3" >
+                    <div class = "proj_label" >
+                      <p class="proj_name">Tong Qu</p>
+                      <p class="proj_intro">The biggest event-finding platform in Shanghai Jiao Tong University</p>
+                      <div id = "proj_shortline" style="background: #ff5722"></div>
+                      <p class="proj_tag">
+                        READ MORE
+                      </p> 
+                    </div>
+                </div>
+              </a>
+            </div>
+        </div>
+
+
+        <!-- Project 3 -->
+<!--         <div class="container-fluid">
+          <div class = "project3">
+            <div class="container">
+              <div class="row">
+                <div class="col-2 col-lg-7 col-md-5 col-sm-3" style="border: 0;">
+                </div>
+                <div class="col-9 col-lg-5 col-sm-9 col-md-7">
+                  <a  href="project3.html" target="_blank">
+                    <div id = "proj3_label" class = "proj_label">
+                      <p class="proj_name">Tong Qu</p>
+                      <p class="proj_intro">The biggest event-finding platform in Shanghai Jiao Tong University</p>
+                      <div id = "proj3_shortline"></div>
+                      <p class="proj_tag">
+                        Read More
+                      </p>                 
+                    </div>        
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Project 1 -->
+        <div class="container-fluid even" id ="proj" style="margin-top:10vw">
+            <div class="row" >
+              <a  href="project1.html" target="_blank">
+                <div class="col-lg-7 col-lg-push-4 col-md-7 col-sm-9">
+                  <div class="proj_img"><img src="img/test4.png"></div>
+                </div>
+                <div class="col-lg-5 col-lg-pull-6 col-md-5 col-sm-3" >
+                    <div class = "proj_label" >
+                      <p class="proj_name">AI Planner</p>
+                      <p class="proj_intro">An intelligent solution helping newly graduated college students furnish apartments in urban cities.</p>
+                      <div id = "proj_shortline" style="background: #1CBEBC"></div>
+                      <p class="proj_tag">
+                        READ MORE
+                      </p> 
+                    </div>
+                </div>
+             </a>
+            </div>
+        </div>
+
+
+
+
+
+<!--         <div class="container-fluid">
           <div class = "project1" >
             <div class="container">
               <div class="row">
-                <div class="col-lg-7" style="border: 0;">
+                <div class="col-2 col-lg-7 col-md-5 col-sm-3" style="border: 0;">
                 </div>
-                <div class="col-lg-5">
+                <div class="col-9 col-lg-5 col-sm-9 col-md-7">
                   <a  href="project1.html" target="_blank">
-                    <div id = "proj1_label" class = "proj_label hideme">
+                    <div id = "proj1_label" class = "proj_label">
                       <p class="proj_name">AI Planner</p>
-                      <p class="proj_intro">The biggest activity-finding platform in Shanghai Jiao Tong University</p>
+                      <p class="proj_intro">An intelligent solution helping newly graduated college students furnish apartments in urban cities.</p>
                       <div id = "proj1_shortline"></div>
 
                       <p class="proj_tag">
@@ -78,15 +283,39 @@
              </div>
             </div>
           </div>
-          <!-- Project 2 -->
-          <div class = "project2">
-            <div class="container">
-              <div class ="row">   
-                <div class="col-lg-5">
-                  <a  href="project2.html" target="_blank">
-                    <div id = "proj2_label" class = "proj_label hideme">
+        </div> -->
+
+
+        <!-- Project 2 -->
+
+        <div class="container-fluid odd" id ="proj" style="margin-top:10vw">
+            <div class="row" >
+              <a  href="project1.html" target="_blank">
+                <div class="col-lg-7 col-lg-push-1 col-md-7 col-sm-9">
+                  <div class="proj_img"><img src="img/test5.png"></div>
+                </div>
+                <div class="col-lg-5 col-lg-pull-1 col-md-5 col-sm-3" >
+                    <div class = "proj_label">
                       <p class="proj_name">BestBuy Demo</p>
-                      <p class="proj_intro">The demo appointment and survey system for BestBuy.com</p>
+                      <p class="proj_intro">A demo appointment and survey system intended to improve the gaming mice purchase experience for BestBuy.</p>
+                      <div id = "proj_shortline" style="background: #0074B7" ></div>
+                      <p class="proj_tag">
+                        READ MORE
+                      </p> 
+                    </div>
+                </div>
+              </a>
+            </div>
+        </div>
+
+
+        <div class="container-fluid" style="margin-top:10vw">
+              <div class="row"> 
+<!--                 <div class="col-9 col-lg-5 col-sm-9 col-md-7">
+                  <a  href="project2.html" target="_blank">
+                    <div id = "proj2_label" class = "proj_label">
+                      <p class="proj_name">BestBuy Demo</p>
+                      <p class="proj_intro">A demo appointment and survey system intended to improve the gaming mice purchase experience for BestBuy.</p>
                       <div id = "proj2_shortline"></div>
 
                       <p class="proj_tag">
@@ -97,33 +326,24 @@
                     
                    </a>
                 </div>
-                <div class="col-lg-7" style="border: 0;">
+                <div class="col-1 col-lg-7 col-md-5 col-sm-3" style="border: 0;">
+                </div> -->
+                <div class="col-lg-12 footer">
+                    <span class="signature-1">
+                      <a href="https://www.linkedin.com/in/scottsun94/" style = "color: rgb(200,200,200);">© 2019 Huaiwei Sun</a>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    <span class="signature-2">
+                      Coded From Scratch
+                    </span>
                 </div>
-              </div>
             </div>
+      </div>
 
-          </div>
-          <!-- Project 3 -->
-          <div class = "project3">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-7" style="border: 0;">
-                </div>
-                <div class="col-lg-5">
-                  <a  href="project3.html" target="_blank">
-                    <div id = "proj3_label" class = "proj_label hideme">
-                      <p class="proj_name">AI Planner</p>
-                      <p class="proj_intro">The biggest activity-finding platform in Shanghai Jiao Tong University</p>
-                      <div id = "proj3_shortline"></div>
-                      <p class="proj_tag">
-                        Read More
-                      </p>                 
-                    </div>        
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          
+          
+          
           <!-- Project 4 -->
 <!--           <div class = "project4">
             <div class="container">
@@ -209,44 +429,14 @@
             </div>
           </div> -->
 
-      <!-- End of Page Content -->
-      </div>
 
-      <!-- footer -->
-        <div class="footer">
-          <div class="foot">
-            <span class="signature-1">
-              <a href="https://www.linkedin.com/in/scottsun94/" style = "color: rgb(200,200,200);">© 2017 Huaiwei Sun</a>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
-            <span class="signature-2">
-             Philosophia, love of wisdom
-            </span>
-          </div>
-        </div>
+
 
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
-    <!-- customized js for scroll & fadein effect -->
-    <script type="text/javascript">
-    $(document).ready(function() {
-        /* Every time the window is scrolled ... */
-        $(window).scroll( function(){
-            /* Check the location of each desired element */
-            $('.hideme').each( function(i){
-                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
-                /* If the object is completely visible in the window, fade it it */
-                if( bottom_of_window > bottom_of_object ){
-                    $(this).animate({'opacity':'1'},500);
-                }
-            });
-        });
-    });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Bootstrap required JavaScript -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Responsive navigation control -->
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
@@ -259,5 +449,24 @@
     <script src="js/animation.js"></script>
     <!-- Fade in animation -->
     <script src="js/jquery-ui.js"></script>
+    <!-- Disable Hover on mobile -->
+    <script type="text/javascript" src="js/hover_fix_mobile.js"></script>
+        <!-- customized js for scroll & fadein effect -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+          /* Every time the window is scrolled ... */
+          $(window).scroll( function(){
+              /* Check the location of each desired element */
+              $('.hideme').each( function(i){
+                  var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                  var bottom_of_window = $(window).scrollTop() + $(window).height();
+                  /* If the object is completely visible in the window, fade it it */
+                  if( bottom_of_window > bottom_of_object ){
+                      $(this).animate({'opacity':'1'},500);
+                  }
+              });
+          });
+      });
+    </script>
   </body>
 </html>
