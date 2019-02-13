@@ -464,12 +464,13 @@ img{
 	padding-left: 1vw;
 }
 .intro_laptop_2{
-  	font-family: Georgia, "Times New Roman", Times, serif;
+/*  	font-family: Georgia, "Times New Roman", Times, serif;*/
+	font-weight: 700;
 	font-size: 4.1vw;
 	color: #0B234B;
 	letter-spacing: 2.57px;
 	line-height: 5vw; 
-	margin-top: 2vw;
+	margin-top: 2.4vw;
 }
 .intro_laptop_3{
 	font-size: 1.2vw;
