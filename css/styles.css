@@ -407,6 +407,12 @@ p.bullet {
   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica', Arial, sans-serif !important;
 }
 
+  .mobile_version{
+  	display: none;
+  }
+  .desktop_version{
+  	display: initial;
+  }
 
 
 /*
@@ -452,6 +458,7 @@ img{
 	border: 1px solid #676767;
 	border-radius: 6px;
 	color: #676767;
+	background-color: #FFFFFF;
 }
 .collapse-btn:hover{
 	background-color: #00AEEF;
@@ -527,11 +534,12 @@ img{
 	letter-spacing: 1px;
 }
 .introduction_mobile .intro_mobile_2{
-	font-family: Georgia, "Times New Roman", Times, serif;
+/*	font-family: Georgia, "Times New Roman", Times, serif;*/
 	color: #0B234B; 
 	font-size: 10vw;
 	font-weight: 600;
 	margin-top: 6vw; 
+	padding-right: 3rem;
 }
 .introduction_mobile .intro_mobile_3{
 	font-size: 4vw;
@@ -837,6 +845,19 @@ Contact page
 
 
 @media screen and (max-width: 767px) and (min-width: 320px){
+    #fh5co-main {
+      width: 100%;
+      margin-right: 0;
+    }
+	#fh5co-main .fh5co-narrow-content {
+	  position: relative;
+	  width: 100%;
+	  margin: 0 auto;
+	}
+
+
+
+
 	#navigation-home a {
 	color: rgba(230, 230, 230, 0.75);
 	font-size: 18px;
@@ -1144,9 +1165,90 @@ Contact page
     transition-delay: 0s, 0s;
   }
 
+  p.project_feature_title{
+	  font-size:2rem;
+	  margin-top: 4vw;
+	  line-height: 2.5rem;
+  font-weight: 600;
+	}
+	p.project_feature_title_small{
+	  font-size:2rem;
+	  margin-top: 6vw;
+	  line-height: 2.5rem;
+	  font-weight: 600;
+	}
+
+  .video_design {
+  	margin-left: auto;
+  }
+
+  .mobile_version{
+  	display: initial;
+  }
+  .desktop_version{
+  	display: none;
+  }
+
+
 }
 
 @media screen and (max-width: 1024px) and (min-width: 767px){
+	 #fh5co-main {
+      width: 100%;
+      margin-right: 0;
+    }
+	#fh5co-main .fh5co-narrow-content {
+	  position: relative;
+	  width: 100%;
+	  margin: 0 auto;
+	}
+
+	.fh5co-nav-toggle {
+    opacity: 1;
+    visibility: visible;
+	}
+	.nav-toggle {
+		display: none;
+		height: 9vw;
+		width:  9vw;
+		overflow: hidden;
+		position: fixed;
+		right: 5%;
+		text-indent: 100%;
+		white-space: nowrap;
+		z-index: 99999;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+
+	.nav-toggle span {
+		background-color: #000;
+		bottom: auto;
+		display: inline-block;
+		height: 2px;
+		left: 50%;
+		position: absolute;
+		right: auto;
+		top: 50%;
+		width: 20px;
+		z-index: 10;
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-ms-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	.nav-toggle.light-bg span {
+		background-color: #000;
+	}
+
+	.nav-toggle span:before, .nav-toggle span:after {
+		background-color: #000;
+	}
+
+
 	#navigation-home a {
 	color: rgba(230, 230, 230, 0.75);
 	font-size: 32px;
@@ -1233,6 +1335,25 @@ Contact page
     transition-timing-function: ease, ease;
     transition-delay: 0s, 0s;
   }
+
+    p.project_feature_title{
+	  font-size:2.5rem;
+	  margin-top: 8vw;
+	  line-height: 3rem;
+  font-weight: 600;
+	}
+	p.project_feature_title_small{
+	  font-size:2rem;
+	  margin-top: 3.2vw;
+	  line-height: 2.6rem;
+	  font-weight: 600;
+	}
+	.video_design {
+  	margin-left: auto;
+  }
+  	.proj_intro{
+  		font-size:1rem;
+  	}
 }
 @media screen and (min-width: 568) and (max-width: 1140px) and (orientation: portrait)  {
 	.static_profile{
@@ -1242,10 +1363,9 @@ Contact page
 }
 
 @media screen and (max-width: 1140px) and (min-width: 1024px){
-	
+
 }
 
-@media screen and (min-width: 1140px){
-
+@media screen and (min-width: 1200px){
 
 }

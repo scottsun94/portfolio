@@ -11,7 +11,7 @@ body.offcanvas #fh5co-aside {
   -o-transform: translateX(0);
   transform: translateX(0);
   width: 270px;
-  background: #F0F8FC;
+  background: #FFFFFF;
   z-index: 999;
   position: fixed;
 }
