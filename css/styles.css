@@ -1041,11 +1041,7 @@ Contact page
 		width: 12px;
 	}
 	.arrow_down_mobile{
-		text-align: center;
-		margin-top: 10vh;
-	}
-	.arrow_down_mobile img {
-		width: 16px;
+		display: none;
 	}
 	.static_profile{
 		display: block;
