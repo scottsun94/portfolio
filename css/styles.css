@@ -474,12 +474,12 @@ img{
 
 /*---------- Self Intro --------------*/
 .first{
-	padding-bottom: 4vw;
+/*	padding-bottom: 4vw;*/
 	background:url('../img/bg_circles.png') no-repeat center top fixed;
-	-webkit-background-size: 100% auto;
-	-moz-background-size: 100% auto;
-	-o-background-size: 100% auto;
-	background-size: 100% auto;
+	-webkit-background-size: Cover;
+	-moz-background-size: Cover;
+	-o-background-size: Cover;
+	background-size: Cover;
  }
 
 
@@ -1016,12 +1016,11 @@ Contact page
 	}
 
 	.first{
-		height: 90vh;
 		background:url('../img/head_background_mobile.png') no-repeat center top fixed;
-		-webkit-background-size: 100% auto;
-		-moz-background-size: 100% auto;
-		-o-background-size: 100% auto;
-		background-size: 100% auto;
+		-webkit-background-size: Cover;
+		-moz-background-size: Cover;
+		-o-background-size: Cover;
+		background-size: Cover;
 
 	}
 
@@ -1202,8 +1201,8 @@ Contact page
 	}
 	.nav-toggle {
 		display: none;
-		height: 9vw;
-		width:  9vw;
+		height: 6vw;
+		width:  6vw;
 		overflow: hidden;
 		position: fixed;
 		right: 5%;
