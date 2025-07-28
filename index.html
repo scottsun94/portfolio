@@ -25,11 +25,7 @@
     <!-- Navigation Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
 
-<style>
-    body{
-      background-color: rgb(250,250,250);
-    }
-</style>
+
 
   </head>
   <body class="">
@@ -43,63 +39,56 @@
                     <a class="logo" href="#"><img src="img/logo.png" alt="Huaiwei Sun"></a>
                     <nav id='navigation' class="navigation" role="navigation">
                       <ul class="primary-nav">
-                        <li><a href="#" style="color: #FF9C21;">Welcome</a></li>
+                        <li><a href="#" id="theme-toggle" onclick="toggleTheme()" style="cursor: pointer;">
+                          <svg class="theme-icon moon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd" />
+                          </svg>
+                        </a></li>
   <!--                       <li><a href="profile.html">Profile</a></li> 
                         <li><a href="resume.html">Resume</a></li>
                         <li><a href="contact.html">Contact</a></li>-->
                       </ul>
                     </nav>
-                    <a href="#" class="nav-toggle">Menu<span></span></a>
                   </div>
                 </div>
               </div>
               <!-- Intro -->
               <div class="row">
-                <div class="introduction_laptop">
-                  <div class="col-lg-6 col-lg-push-2 col-md-6 col-md-push-2 col-sm-6 col-sm-push-2">
-                    <p class="intro_laptop_1">
-                      Hi there,
+                <div class="introduction">
+                  <div class="col-12">
+                    <p class="intro_1">
+                      👋
                     </p>
-                    <p class="intro_laptop_2">I’m Huaiwei Sun. A passionate designer with philosophía</p>
+                    <p class="intro_2">Huaiwei is simplifying <a href="https://www.anyscale.com" target="_blank" style = "color: var(--link-color); text-decoration: underline;">ML infra.</a></p>
                   </div>
                 </div>
               </div>
-              <div class="row introduction_laptop">  
-                  <div class="col-lg-3 col-lg-push-5 col-md-3 col-md-push-5 col-sm-3 col-sm-push-5" >   
-                    <p class="intro_laptop_3">Connecting the dots through reading, thinking and creating</p>
+
+              <!-- Info Banner -->
+              <div class="row">
+                <div class="col-12 banner-container">
+                  <div class="info-banner">
+                    <a href="mailto:huaiweisun@outlook.com" target="_blank">Shoot me an email</a> for my portfolio or work examples.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row introduction">
+                  <div class="col-12">
+                    <p class="intro_3">Complexity happens. Simplicity is designed.</p>
                   </div>
               </div>
 
               <div class="row">
-                <div class="col-lg-12 footer introduction_laptop" >
+                <div class="col-12 footer" >
                     <span class="signature-1">
-                      <a href="https://www.linkedin.com/in/scottsun94/" target="_blank" style = "color: rgb(150,150,150);">© 2019 Huaiwei Sun</a>
+                      <a href="https://www.linkedin.com/in/scottsun94/" target="_blank" style = "color: var(--signature-color);">© 2025 Huaiwei Sun</a>
                     </span>
                 </div>
               </div>
 
 
-              <div class="row">
-                <div class="col-lg-12 col-12 introduction_mobile">
-                  <p class="intro_mobile_1">Hi there</p>
-                  <p class="intro_mobile_2">I’m Huaiwei Sun. A passionate designer with philosophía</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-8 col-sm-8 col-xs-10 introduction_mobile">
-                  <p class="intro_mobile_3">Connecting the dots through reading, thinking and creating</p>
-                  <div class="arrow_down_mobile">
-                    <a href="#secondPage"><img  src="img/arrow.png"></a>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 footer introduction_mobile" >
-                    <span class="signature-1">
-                      <a href="https://www.linkedin.com/in/scottsun94/" target="_blank" style = "color: rgb(150,150,150);">© 2019 Huaiwei Sun</a>
-                    </span>
-                </div>
-              </div>
+
         </div>
       </div>
 
@@ -113,35 +102,65 @@
     <!-- Bootstrap required JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Responsive navigation control -->
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Main JavaScript -->
     <script src="js/main.js"></script>
-    <!-- <script src="js/retina.min.js"></script> -->
-    <!-- <script src="js/modernizr.js"></script> -->
-
-    <!-- <script src="js/main-dev.js"></script> -->
-    <!-- Nodes garden animation -->
-    <script src="js/animation.js"></script>
-    <!-- Fade in animation -->
-    <script src="js/jquery-ui.js"></script>
     <!-- Disable Hover on mobile -->
     <script type="text/javascript" src="js/hover_fix_mobile.js"></script>
-        <!-- customized js for scroll & fadein effect -->
-    <script type="text/javascript">
-      $(document).ready(function() {
-          /* Every time the window is scrolled ... */
-          $(window).scroll( function(){
-              /* Check the location of each desired element */
-              $('.hideme').each( function(i){
-                  var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                  var bottom_of_window = $(window).scrollTop() + $(window).height();
-                  /* If the object is completely visible in the window, fade it it */
-                  if( bottom_of_window > bottom_of_object ){
-                      $(this).animate({'opacity':'1'},500);
-                  }
-              });
-          });
+
+
+    <!-- Dark/Light Mode Toggle Script -->
+    <script>
+      // Theme management
+      function getPreferredTheme() {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme) {
+          return storedTheme;
+        }
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function setTheme(theme) {
+        // Update icon immediately before theme change to avoid color flash
+        updateThemeToggleText(theme);
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+      }
+
+      function updateThemeToggleText(themeOverride = null) {
+        const currentTheme = themeOverride || document.documentElement.getAttribute('data-theme') || getPreferredTheme();
+        const toggleButton = document.getElementById('theme-toggle');
+        if (toggleButton) {
+          const svg = toggleButton.querySelector('svg');
+          if (svg) {
+            if (currentTheme === 'dark') {
+              // Sun icon for dark mode (click to go light) - orange color
+              svg.setAttribute('class', 'theme-icon sun');
+              svg.innerHTML = '<path fill-rule="evenodd" d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" clip-rule="evenodd" />';
+            } else {
+              // Moon icon for light mode (click to go dark) - gray color
+              svg.setAttribute('class', 'theme-icon moon');
+              svg.innerHTML = '<path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd" />';
+            }
+          }
+        }
+      }
+
+      function toggleTheme() {
+        const currentTheme = document.documentElement.getAttribute('data-theme') || getPreferredTheme();
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+      }
+
+      // Initialize theme on page load
+      document.addEventListener('DOMContentLoaded', function() {
+        setTheme(getPreferredTheme());
+
+        // Listen for system theme changes
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+          if (!localStorage.getItem('theme')) {
+            setTheme(e.matches ? 'dark' : 'light');
+          }
+        });
       });
     </script>
   </body>
