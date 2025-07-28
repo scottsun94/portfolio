@@ -1,2 +1,3 @@
 # portfolio
-The portfolio of Scott Sun
+The portfolio of Huaiwei Sun
+Linkedin: https://www.linkedin.com/in/scottsun94/
